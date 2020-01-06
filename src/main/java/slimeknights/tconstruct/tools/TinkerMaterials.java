@@ -382,6 +382,7 @@ public final class TinkerMaterials {
 
     feather.addItemIngot("feather");
     feather.setRepresentativeItem(Items.FEATHER);
+
     leaf.addItem("treeLeaves", 1, Material.VALUE_Shard);
     leaf.setRepresentativeItem(Blocks.LEAVES);
     safeAdd(slimeleaf_blue, new ItemStack(TinkerWorld.slimeLeaves, 1, BlockSlimeGrass.FoliageType.BLUE.getMeta()), Material.VALUE_Shard, true);

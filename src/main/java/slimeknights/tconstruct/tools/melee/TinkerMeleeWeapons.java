@@ -22,12 +22,7 @@ import slimeknights.tconstruct.library.Util;
 import slimeknights.tconstruct.library.tools.ToolCore;
 import slimeknights.tconstruct.tools.AbstractToolPulse;
 import slimeknights.tconstruct.tools.TinkerTools;
-import slimeknights.tconstruct.tools.melee.item.BattleSign;
-import slimeknights.tconstruct.tools.melee.item.BroadSword;
-import slimeknights.tconstruct.tools.melee.item.Cleaver;
-import slimeknights.tconstruct.tools.melee.item.FryPan;
-import slimeknights.tconstruct.tools.melee.item.LongSword;
-import slimeknights.tconstruct.tools.melee.item.Rapier;
+import slimeknights.tconstruct.tools.melee.item.*;
 
 @Pulse(
     id = TinkerMeleeWeapons.PulseId,
@@ -81,7 +76,7 @@ public class TinkerMeleeWeapons extends AbstractToolPulse {
     battleSign = registerTool(registry, new BattleSign(), "battlesign");
 
     cleaver = registerTool(registry, new Cleaver(), "cleaver");
-    //battleAxe = registerTool(new BattleAxe(), "battleaxe");
+    battleAxe = registerTool(registry, new BattleAxe(), "battleaxe");
   }
 
   // INITIALIZATION
@@ -101,7 +96,7 @@ public class TinkerMeleeWeapons extends AbstractToolPulse {
     TinkerRegistry.registerToolCrafting(battleSign);
 
     TinkerRegistry.registerToolForgeCrafting(cleaver);
-    //TinkerRegistry.registerToolForgeCrafting(battleAxe);
+    TinkerRegistry.registerToolForgeCrafting(battleAxe);
   }
 
   // POST-INITIALIZATION

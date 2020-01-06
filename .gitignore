@@ -48,3 +48,4 @@ options.txt
 /classes/
 #custom
 *.tmp
+/src/TinkersConstruct.iml
